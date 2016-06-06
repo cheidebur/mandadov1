@@ -6,7 +6,7 @@ body {
 }
 
 .mandado-container {
-	background-color:cornsilk;
+	background-color: #A9A9A9;
 	height: 30rem;
 	width: 40rem;
 	margin: 0 auto;
@@ -57,16 +57,17 @@ ul > li:hover {
 /*.entries-list > .unchecked-item:hover {*/
 ul {
 	background-color: tomato;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none; 
 }
 
 
-.entries-list > .checked-item {
-	color: #E4BAB8;
-}
 
 
 .textbox {
-	background-color: cornsilk;
+	background-color: #A9A9A9;
 	height: 5rem;
 	width: 40rem;
 	margin: 0 auto;
@@ -84,7 +85,10 @@ ul {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 3rem;
 }
+
+
 
 #add {
 	padding: 2em;
@@ -99,5 +103,6 @@ ul {
 	background-color: gray;
 	border-radius: 5rem;
 	bottom: 3.5rem;
+	cursor: pointer;
 }
 
