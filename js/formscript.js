@@ -15,9 +15,11 @@ not function?
     function(){
         $('#button').click(function(){
                 var toAdd = $('input[name=ListItem]').val();
-                 $('.entries-list').append('<li>' + toAdd + '</li>');
+                $('<li>' + toAdd + '</li>').prependTo(".entries-list").hide().slideDown();
+
 
             });
+
 
 //using enter key as well as clicking on submit button
 
@@ -43,10 +45,12 @@ not function?
 
 //double click remove single list item   
 
-      $("ul").on('dblclick','li', function(){
+      $("ul").on('click','li', function(){
         $(this).slideUp('slow');    
       });
       
-      
+
+
+
       
     });

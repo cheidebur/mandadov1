@@ -1,5 +1,5 @@
 body {
-	background-color: #9A9A9A;
+	background-color: #908A8A;
 	font-family: lato, sans-serif;
 	font-weight: 200;
 
@@ -17,8 +17,12 @@ body {
 }
 
 #clear {
-	margin-left: 3.3rem;
+	margin-left: 2.9rem;
 	margin-top: 0.5rem;
+	background-color: gray;
+	cursor: pointer;
+	color: white;
+
 }
 
 .entries {
@@ -27,6 +31,10 @@ body {
 	position: relative;
 	margin: 0 auto;
 	border-radius: 10px;
+	background-image: url('http://simpleicon.com/wp-content/uploads/pen-15.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
 
 
 }
@@ -43,6 +51,7 @@ ul {
 	border-radius: 5px;
 	padding-left: 0.5em;
 	font-size: 2.2rem;
+	font-weight: 300;
 }
 
 /* .entries-list > .unchecked-item { */
@@ -68,7 +77,7 @@ ul {
 
 .textbox {
 	background-color: #A9A9A9;
-	height: 5rem;
+	height: 4rem;
 	width: 50rem;
 	margin: 0 auto;
 	position: absolute;
@@ -79,14 +88,14 @@ ul {
 }
 
 #inputbox {
-	height: 4rem;
+	height: 3rem;
 	width: 38rem;
 	position: relative;
 	display: block;
 	margin: 0 auto;
 	top: 0.3rem;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 200;
 	border-radius: 5rem;
 }
@@ -109,7 +118,7 @@ input:focus {
 	background-color: gray;
 	border-radius: 10rem;
 	padding: .6rem;
-	bottom: 3.5rem;
+	bottom: 3rem;
 	right: 0.5rem;
 	cursor: pointer;
 	color: white;
