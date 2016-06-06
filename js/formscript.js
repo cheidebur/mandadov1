@@ -18,6 +18,7 @@ not function?
                  $('.entries-list').append('<li>' + toAdd + '</li>');
 
             });
+
 //using enter key as well as clicking on submit button
 
        $("input[name=ListItem]").keypress(function(event){
@@ -27,12 +28,17 @@ not function?
           }         
       });
 
+
 //clear button, placement down here works
 
       $("#clear").click(function(yas) {
-      $(".entries-list").empty();
-      return false;
-      });
+/*fade out ul*/      
+          $(".entries-list").fadeOut(function() {
+/*empty UL and show again to be able to repopulate*/
+          $(this).empty().show();
+
+           });
+     });
 
 
 //double click remove single list item   
