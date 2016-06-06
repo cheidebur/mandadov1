@@ -16,8 +16,8 @@ body {
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4)
 }
 
-button {
-	margin-left: 1rem;
+#clear {
+	margin-left: 3.3rem;
 	margin-top: 0.5rem;
 }
 
@@ -31,13 +31,13 @@ button {
 
 }
 
-.entries-list {
+ul {
 	list-style-type: none;
 	text-align: center;
 	padding-right: 40px;
 }
 
-.entries-list li {
+ul {
 	text-align: left;
 	margin: 0.3rem;
 	border-radius: 5px;
@@ -45,15 +45,20 @@ button {
 	font-size: 2.2rem;
 }
 
-.entries-list > .unchecked-item {
+/* .entries-list > .unchecked-item { */
+ul > li:hover {
 	background-color: #BAD0D0;
 	color:white;
 	transition: background-color 0.5s ease;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
-.entries-list > .unchecked-item:hover {
+/*.entries-list > .unchecked-item:hover {*/
+ul {
 	background-color: tomato;
 }
+
 
 .entries-list > .checked-item {
 	color: #E4BAB8;
@@ -68,5 +73,31 @@ button {
 	position: absolute;
 	top: 30.5rem;
 	border-radius: 10px;
-	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4)
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+
 }
+
+#inputbox {
+	height: 4rem;
+	width: 30rem;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#add {
+	padding: 2em;
+
+}
+
+#button {
+	display: inline-block;
+	position: relative;
+	float:right;
+	font-size:3rem;
+	background-color: gray;
+	border-radius: 5rem;
+	bottom: 3.5rem;
+}
+
