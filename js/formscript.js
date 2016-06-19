@@ -14,22 +14,27 @@ not function?
 
     function(){
         $('#button').click(function(){
-                var toAdd = $('input[name=ListItem]').val();
-                $('<li>' + toAdd + '</li>').prependTo(".entries-list").hide().slideDown();
+          var toAdd = $('input[name=ListItem]').val();
+          $('<li>' + toAdd + '</li>').prependTo(".entries-list").hide().slideDown('fast');
+          $("input").val('');
+
+});
+
+      
+
+//using enter key as well as clicking on submit button and resetting
+//the input field after enter is pressed and li created
 
 
-            });
-
-
-//using enter key as well as clicking on submit button
 
        $("input[name=ListItem]").keypress(function(event){
           if(event.keyCode == 13) {
             $("#button").click();
+            $(this).val('');
             return false;
           }         
       });
-
+      
 
 //clear button, placement down here works
 
@@ -46,7 +51,7 @@ not function?
 //double click remove single list item   
 
       $("ul").on('click','li', function(){
-        $(this).slideUp('slow');    
+        $(this).slideUp('fast');    
       });
       
 
